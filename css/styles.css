@@ -173,7 +173,6 @@ img {
   text-transform: uppercase;
   color: var(--main-title-color);
   max-width: 696px;
-  padding: 200px 452px 280px 452px;
 }
 
 .btn-item:hover {
