@@ -161,7 +161,6 @@ img {
 }
 
 .hero-container {
-  display: flex;
   padding: 200px 452px 280px 452px;
 }
 
@@ -174,6 +173,7 @@ img {
   text-transform: uppercase;
   color: var(--main-title-color);
   max-width: 696px;
+  padding: 200px 452px 280px 452px;
 }
 
 .btn-item:hover {
@@ -235,13 +235,12 @@ img {
 .about {
   background-color: var(--bacik-bg-color);
 }
-.about-container {
-  display: flex;
-}
 
 .about-list {
   display: flex;
-  padding: 94px 215px 94px 215px;
+  justify-content: space-between;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .about-item {
@@ -291,6 +290,7 @@ img {
   letter-spacing: 0.03em;
 
   color: var(--second-title-color);
+  margin-bottom: 50px;
 }
 
 .comand-list {
