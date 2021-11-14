@@ -7,40 +7,71 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <link rel="stylesheet" href="./css/styles.css">
     <title>Document</title>
  
 </head>
 <body>
+
     <header class="header">
-        <nav class="header-navigation">
-        <a class="link header-logo" href="">Web<span class="letter">Studio</span></a>
-        
-        <ul class="list header-list">
-            <li class="header-item"><a class="link header-link" href="./index.html">Студия</a></li>
-            <li class="header-item"><a class="link header-link" href="./portfolio.html">Портфолио</a></li>
-            <li class="header-item"><a class="link header-link" href="">Контакты</a></li>
-        </ul>
-    </nav>
-    
-    <ul class="list header-contact" >
-        <li class="header-contact-item"><a class="link header-contact-mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li class="header-contact-item" ><a class="link header-contact-phone " href="tel:+380961111111">+38 0961111111</a></li>
-    </ul>    
+        <div class="container header-container">
+
+            <nav class="header-navigation">
+                <a class="link header-logo" href="">Web<span class="letter">Studio</span></a>
+            
+                <ul class="list header-list">
+                    <li class="header-item"><a class="link header-link" href="./index.html">Студия</a></li>
+                    <li class="header-item"><a class="link header-link" href="./portfolio.html">Портфолио</a></li>
+                    <li class="header-item"><a class="link header-link" href="">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header-co">
+                <ul class="list header-contact">
+                <li class="header-contact-item"><a class="link header-contact-mail"
+                        href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li class="header-contact-item"><a class="link header-contact-phone " href="tel:+380961111111">+38 0961111111</a>
+                </li>
+            </ul>
+            </div>
+            
+            
+
+        </div>
+     
+
+
   </header>
  
  
  
  <main> 
 
-<section class="hero">
-    <h1 class="hero-text">Эффективные решения для вашего бизнеса</h1>
-    <button class="btn" type="button">Заказать услугу</button>
+<section class="section hero">
+
+    <div class="container hero-container">
+
+    
+
+  
+    
+   
+   <h1 class="hero-text">Эффективные решения для вашего бизнеса</h1>
+
+  
+    <button  class="btn" type="button">Заказать услугу</button>
+</div>
+
+   
 </section>
-<section class="about">
-    <h2 >Почему стоит работать с нами</h2>
-    <!-- в макете нет этого заголовка -->
+
+<section class="section about">
+    
+    
+<div class="container">
    <ul class="about-list">
        <li class="about-item list">
            <h3 class="about-title">Внимание к деталям</h3>
@@ -59,9 +90,16 @@
         <p class="about-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
        </li>
    </ul>
+</div>
+
+
 </section>
-<section class="about-work">
+<section class=" section about-work">
+
+    <div class="container">
     <h2 class="about-work-title">Чем мы занимаемся</h2>
+    
+   
    <ul class="about-w-list">
        <li class="about-w-item list">
            <img src="./images/img1.jpg" alt="Игорь Демьяненко" width="370" height="294">
@@ -73,10 +111,15 @@
         <img src="./images/img3.jpg" alt="Ольга Репина" width="370" height="294">
        </li>
    </ul>
+</div>
+
+
 
 </section>
 
-<section class="comand">
+<section class="section comand">
+    <div class="container">
+
     <h2 class="comand-title">Наша команда</h2>
     <ul class="list comand-list">
         <li class="comand-item">
@@ -105,6 +148,7 @@
         
         </li>
     </ul>
+    </div>
 </section>
 </main>
 <footer class="footer">
