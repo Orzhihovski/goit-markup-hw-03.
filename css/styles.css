@@ -26,7 +26,6 @@ ul {
 
 .container {
   width: 1200px;
-
   margin: 0 auto;
 }
 
@@ -50,6 +49,7 @@ body {
 
 img {
   display: block;
+  max-width: 100%;
 }
 /*---------------------header-------------------------------*/
 .header-container {
@@ -153,6 +153,64 @@ img {
 .header-contact-mail:focus {
   color: var(--accent-color);
 }
+/*---------------------filter-------------------------------*/
+.btn-fil {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  /* identical to box height, or 162% */
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--second-title-color);
+  background-color: var(--bacik-bg-color);
+}
+
+.btn-fil:hover,
+.btn-fil:focus {
+  color: var(--main-title-color);
+  background-color: var(--accent-color);
+}
+.btn-fil {
+  cursor: pointer;
+}
+.filter-item {
+  display: flex;
+  align-items: center;
+}
+.btn-list {
+  display: flex;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 56px;
+}
+
+.btn-filter-item:not(last-child) {
+  margin-right: 8px;
+}
+
+.menu-container {
+  width: 1200px;
+}
+.menu-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.menu-item {
+  flex-basis: calc(100% - 9 * 30px) / 9;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
 
 /*---------------------hero-------------------------------*/
 
@@ -161,7 +219,9 @@ img {
 }
 
 .hero-container {
-  padding: 200px 452px 280px 452px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero-text {
@@ -192,8 +252,7 @@ img {
 
   color: var(--main-title-color);
 
-  margin-top: 360px;
-  margin-bottom: 210px;
+  margin-top: 40px;
 }
 
 .btn:hover,
@@ -203,30 +262,6 @@ img {
 .btn {
   cursor: pointer;
   font-family: inherit;
-}
-
-.btn-fil {
-  font-family: inherit;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  /* identical to box height, or 162% */
-
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  color: var(--second-title-color);
-  background-color: var(--bacik-bg-color);
-}
-
-.btn-fil:hover,
-.btn-fil:focus {
-  color: var(--main-title-color);
-  background-color: var(--accent-color);
-}
-.btn-fil {
-  cursor: pointer;
 }
 
 /*---------------------about-------------------------------*/
@@ -292,11 +327,6 @@ img {
   margin-bottom: 50px;
 }
 
-.comand-list {
-  display: flex;
-  justify-content: space-between;
-}
-
 .menu-title {
   font-weight: bold;
   font-size: 18px;
@@ -321,6 +351,11 @@ img {
 
 /*---------------------comand-------------------------------*/
 .comand-container {
+}
+
+.comand-list {
+  display: flex;
+  justify-content: space-between;
 }
 
 .comand-title {
@@ -359,6 +394,16 @@ img {
   color: var(--main-text-color);
 }
 /*---------------------footer-------------------------------*/
+
+.footer-contanier {
+  display: flex;
+  flex-direction: column;
+  padding-left: 215px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-right: auto;
+}
+
 .footer {
   background-color: var(--second-bg-color);
 }
@@ -373,6 +418,7 @@ img {
   letter-spacing: 0.03em;
 
   color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 09px;
 }
 
 .footer-contact-mail {
@@ -385,6 +431,7 @@ img {
   letter-spacing: 0.03em;
 
   color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 09px;
 }
 .footer-contact-phone {
   font-family: Roboto;
@@ -396,6 +443,7 @@ img {
   letter-spacing: 0.03em;
 
   color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 60px;
 }
 
 .footer-contact-mail:hover,
@@ -422,4 +470,25 @@ img {
   color: var(--main-title-color);
 }
 
-/*--------------------- </index> -------------------------------*/
+.footer-header-logo {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+  margin-bottom: 20px;
+}
+
+.letter {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+
+  letter-spacing: 0.03em;
+  color: var(--second-title-color);
+}
