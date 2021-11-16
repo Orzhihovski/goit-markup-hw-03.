@@ -79,6 +79,7 @@ body {
 }
 .header {
   background-color: var(--heder-bg-color);
+  border-bottom: solid 2px var(--main-title-color);
 }
 .header-contact-item:not(:last-child) {
   margin-right: 50px;
@@ -427,6 +428,10 @@ body {
 }
 .card-content-comand {
   padding: 30px 60px 30px 60px;
+}
+
+.card-thumb-po {
+  border-bottom: solid 0.5px var(--main-text-color);
 }
 /*---------------------footer-------------------------------*/
 
