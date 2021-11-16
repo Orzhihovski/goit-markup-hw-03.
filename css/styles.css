@@ -190,8 +190,6 @@ body {
   margin-right: auto;
   align-items: center;
   justify-content: center;
-  padding-top: 100px;
-  padding-bottom: 56px;
 }
 
 .btn-filter-item:not(last-child) {
@@ -220,11 +218,10 @@ body {
   padding-left: 24px;
 }
 
-.filter-container {
-}
 /*---------------------hero-------------------------------*/
 
 .hero-sect {
+  text-align: center;
   background-color: var(--second-bg-color);
   padding-top: 200px;
   padding-bottom: 210px;
@@ -241,6 +238,8 @@ body {
   text-transform: uppercase;
 
   color: var(--main-title-color);
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .btn-item:hover {
@@ -260,6 +259,9 @@ body {
   letter-spacing: 0.06em;
 
   color: var(--main-title-color);
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 40px;
 }
 
 .btn:hover,
