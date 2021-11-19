@@ -377,6 +377,7 @@ body {
   text-transform: uppercase;
 
   color: var(--second-title-color);
+  margin-bottom: 10px;
 }
 .about-text {
   display: flex;
@@ -393,6 +394,9 @@ body {
 .about-list {
   display: flex;
   justify-content: space-between;
+}
+.about-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /*---------------------about-work-------------------------------*/
