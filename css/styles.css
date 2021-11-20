@@ -62,6 +62,7 @@ body {
   display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
+  border-bottom: 1px solid #ececec;
 }
 
 .header-list {
@@ -171,12 +172,11 @@ body {
   font-size: 16px;
   line-height: 1.62;
   /* identical to box height, or 162% */
+  color: var(--second-title-color);
+  background-color: #f5f4fa;
 
   text-align: center;
   letter-spacing: 0.03em;
-
-  color: var(--second-title-color);
-  background-color: var(--bacik-bg-color);
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 22px;
@@ -184,19 +184,21 @@ body {
   border: 0cm;
   border-radius: 4px;
 }
-
 .btn-fil:hover,
-.btn-fil:focus {
+.btn-fil:active {
   color: var(--main-title-color);
-  background-color: var(--accent-color);
+  background-color: #2196f3;
 }
+
 .btn-fil {
   cursor: pointer;
 }
+
 .filter-item {
   display: flex;
   align-items: center;
 }
+
 .btn-list {
   display: flex;
 
@@ -211,7 +213,7 @@ body {
   margin-bottom: 50px;
 }
 
-.btn-filter-item:not(last-child) {
+.btn-filter-item:not(:last-child) {
   margin-right: 8px;
 }
 
@@ -224,6 +226,7 @@ body {
   margin-top: -30px;
   margin-left: -30px;
 }
+
 /*
 .menu-item {
   flex-basis: calc(100% - 3 * 30px) / 9;
@@ -317,6 +320,7 @@ body {
   letter-spacing: 0.06em;
 
   color: var(--main-title-color);
+  background-color: var(--accent-color);
   margin-right: auto;
   margin-left: auto;
   margin-top: 30px;
@@ -329,43 +333,16 @@ body {
   padding-right: 32px;
 }
 
-.btn:hover,
-.btn:focus {
-  background-color: var(--accent-color);
-}
 .btn {
   cursor: pointer;
   font-family: inherit;
-}
-
-.btn-fil {
-  font-family: inherit;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  /* identical to box height, or 162% */
-
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  color: var(--second-title-color);
-  background-color: var(--bacik-bg-color);
-}
-
-.btn-fil:hover,
-.btn-fil:focus {
-  color: var(--main-title-color);
-  background-color: var(--accent-color);
-}
-.btn-fil {
-  cursor: pointer;
 }
 
 /*---------------------about-------------------------------*/
 
 .about {
   background-color: var(--heder-bg-color);
+  padding-bottom: 0px;
 }
 
 .about-title {
@@ -474,6 +451,7 @@ body {
 }
 .card-content-comand {
   padding: 30px 60px 30px 60px;
+  background-color: var(--heder-bg-color);
 }
 
 .card {
